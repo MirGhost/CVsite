@@ -1,0 +1,244 @@
+.body {
+    font-family: 'Roboto_Mono';
+    height: 100%;
+    width: auto;
+    background: linear-gradient(149deg, rgb(217, 255, 249) 0%, rgb(246, 255, 253) 42%, rgb(255, 224, 248) 72%, rgb(242, 198, 255) 100%);
+    animation: gradient 30s infinite linear;
+    background-size: 200%;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+@font-face
+{
+    font-family: 'Roboto_Mono';
+    src: url(fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf);
+    src: url(fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+.photo 
+{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.mainInfo
+{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.mainWord
+{
+    margin-left: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.botMainWord
+{
+    color: darkgrey;
+    font-size: 15px;
+    margin-left: 15px;
+}
+/* .contacts
+{
+    background-color: rgb(137, 230, 230);
+    border-radius: 20px;
+    max-width: min-content;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    animation: moveBlockToRight 1.5s ease-out forwards;
+} */
+
+.fullinfo
+{
+    background-color: rgb(227, 134, 255);
+    border-radius: 20px;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    animation: moveBlockToLeft 1.5s ease-out forwards;
+}
+.fullinfo p
+{
+    font-size: 14px;
+}
+.education
+{
+    background-color: rgb(137, 230, 230);
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    animation: moveBlockToRight 1.5s ease-out forwards;
+}
+.skils
+{
+    background-color: rgb(227, 134, 255);
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    animation: moveBlockToLeft 1.5s ease-out forwards;
+}
+.languages
+{
+    background-color: rgb(137, 230, 230);
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 10px 20px;
+    margin-bottom: 120px;
+    animation: moveBlockToRight 1.5s ease-out forwards;
+}
+
+@keyframes moveBlockToRight {
+    100% {
+        margin-left: 50%;
+    }
+}
+@keyframes moveBlockToLeft {
+    100% {
+        margin-right: 50%;
+    }
+}
+
+footer
+{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(227, 134, 255);
+}
+
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    min-height: 100px;
+    background: url(img/wave.png);
+    background-size: 1000px;
+}
+footer .waves
+{
+    position: relative;
+}
+
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave2 4s linear infinite;
+}
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 0;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4
+{
+    z-index: 1000;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave2 3s linear infinite;
+}
+.contacts
+{
+    display: flex;
+    justify-content: center;
+}
+ul.contacts
+{
+    
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
+ul.contacts li
+{
+    
+    float: left;
+    margin: 30px;
+    font-size: 15px;
+}
+a 
+{
+    text-decoration: none;
+    color: #000;
+}
+#facebook
+{
+    list-style-image: url(icons/facebook.png);
+}
+#linkedIn
+{
+    list-style-image: url(icons/linkedin.png);
+}
+#email
+{
+    list-style-image: url(icons/email.png);
+}
+#phone
+{
+    list-style-image: url(icons/phone.png);
+}
+
+@keyframes animateWave 
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position: 0px;
+    } 
+}
+@keyframes animateWave2 
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position: 1000px;
+    } 
+}
+@media (max-width: 920px)
+{
+    .contacts
+    {
+        display: inline-block;
+    }
+    @keyframes moveBlockToRight {
+    }
+    @keyframes moveBlockToLeft {
+    }
+}
+
